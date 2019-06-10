@@ -1,19 +1,70 @@
 <!--
  * @Date: 2019-06-10 18:31:33
  * @Author: kuaidjun@163.com
- * @LastEditTime: 2019-06-10 18:32:46
+ * @LastEditTime: 2019-06-10 18:41:11
  * @LastEditors: kuaidjun@163.com
  * @Description: 文件描述
  -->
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页-知一尚智官网</title>
+    <title>官网-知一尚智官网</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
+        }
+        .filter{
+        position: absolute;
+        z-index: 0;
+        width:100%;
+        height:100%;
+        line-height: 100%;
+        top:0;
+        left:0;
+        background: #fe5757;
+        animation: cochange 8s ease-in-out infinite;
+        animation-fill-mode: both;
+        mix-blend-mode: overlay;
+        color: #fff;
+        }
+        @keyframes cochange {
+            0%,
+            100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: .9;
+            }
+        }
+        .main{
+            position: absolute;
+            z-index: 10;
+            top:50%;
+            margin-top:-25px;
+            width:100%;
+            height:50px;
+            line-height: 50px;
+            font-size: 36px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>知一尚智官网</h1>
+    <!-- 渐变层 -->
+<div class="filter"></div>
+<div class="main">知一尚智科技有限公司</div>
+</div>
+    
 </body>
+
 </html>
